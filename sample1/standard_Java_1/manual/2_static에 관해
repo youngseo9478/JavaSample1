@@ -1,0 +1,2 @@
+static 영역 안에서는 this, super이런거 못씀 static은 메모리 영역이 아예 달라서
+heap영역의 주소를 알 수 없기때문에 static메소드 안에는 인스턴를 호출할 수 없다.

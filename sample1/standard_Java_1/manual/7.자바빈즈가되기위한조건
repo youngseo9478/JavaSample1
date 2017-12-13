@@ -1,0 +1,7 @@
+캡슐화
+적절한 set/get 메소드
+디폴트생성자
+equals메소드
+toString메소드
+implements java.io.Serializable
+

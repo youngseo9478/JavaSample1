@@ -1,0 +1,8 @@
+ctrl+z는 이전으로
+ctrl+alt+위/아래키는 복사
+alt+위/아래는 자리 옮기기
+alt+shift+r은 rename
+alt+shift+n은 새로만들기 (추가로 p누르면 패키지,c누르면 클래스..)
+클래스설명보려면 ctrl누르고 커서올려서 클릭
+
+Alt + Shift + S - Show source Quick Menu 하면 getter, setter, constructor 자동생성가능

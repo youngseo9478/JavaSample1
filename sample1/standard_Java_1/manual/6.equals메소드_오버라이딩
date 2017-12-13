@@ -1,0 +1,10 @@
+	@Override
+	public boolean equals(Object obj) {
+		//첫번째, 타입 체크
+		//두번째, 주소안에 든 실데이터 비교
+		if (obj instanceof Student) {
+			return getName() == ((Student) obj).getName() && getAge() == ((Student) obj).getAge()
+					&& getId() == ((Student) obj).getId();
+		} else
+			return false;
+	}

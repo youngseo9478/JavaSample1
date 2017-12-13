@@ -1,0 +1,4 @@
+Card라는 클래스가 있을 때
+Card card = null;	->주소가 없는 상태로, 아직 오브젝트가 아니다.
+Card card = new Card();	->디폴트 생성자로 Card클래스를 이용해 card라는 객체를 만든 것이다.
+

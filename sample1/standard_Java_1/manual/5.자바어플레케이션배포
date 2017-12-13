@@ -1,0 +1,13 @@
+ 예) Book 앱을 배포하려면? 
+ Book.class
+ BookMgr.class
+ 두 개의 클래스를 배포하면된다. test클래스는 배포할필요없다.
+ 그래서 보통은 test클래스는 따로 관리한다.
+ 배치파일 하나를 같이 넣어주긴 해야함 APP클래스...
+ 
+ 
+ jar파일로 만들어 c:\lib에 옮겨놓고
+ cmd에서 이 경로에 들어와서 
+ java -classpath book_v01.jar book.ver01.BookApp 이렇게 해줘야함
+ 		클래스경로    jar명           풀패키지명.클래스명(배치파일)
+ 
