@@ -1,0 +1,31 @@
+		
+		[람다식으로 Anonymous 클래스 구현]
+		
+		##람다식 변수에 함수 등록
+		Command delete = ()->{
+			System.out.println("delete 수행~~~~~");
+		};
+		Command 인터페이스의 void exec();를 구현하고 있는 것
+		파라미터 없으니까 그냥 ()하면 되는 것.
+		
+		Command 인터페이스는  @FuctionalInterface 이다
+		즉, 추상 메소드가 단 하나 존재한다는 것이다. 그래서 함수이름을 안써도
+		람다식으로 표현해서 함수 구현을 할 수 있는 것!
+		참고로, default 메소드는 있어도 상관 없다.
+		
+		
+		//Anonymous class 구현 방식
+		F1 f1 = new F1(){
+			@Override
+			public int max(int a, int b) {
+				return a>b?a:b;
+			}
+		};
+		System.out.println(f1.max(34, 66));
+		
+		//람다식 구현 방식
+		F1 f2 = (int a, int b)->{
+			return a>b?a:b;
+		};
+		System.out.println(f2.max(55, 99));
+		

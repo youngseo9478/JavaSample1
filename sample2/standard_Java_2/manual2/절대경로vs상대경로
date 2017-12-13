@@ -1,0 +1,17 @@
+경로 설정을 하려면 가능한 *절대주소*를 이용해야한다
+예를 들어
+
+		File f = new File("c://test01.txt"); //c루트부터 시작 =>절대경로! (도스에서실행해도 같은 결과)
+		File f2 = new File("test01.txt"); //상대경로! (도스에서 실행하면 다른 결과)
+		System.out.println(f.exists());
+		System.out.println(f2.exists());
+		
+이렇게 하게되면 
+이클립스에서 실행시 => f__false
+				f2__true
+도스 창에서 실행시 =>  f_false
+			    f2__false
+
+			   
+			   도스에서는 상대주소가 ~\bin이기 때문에 여기에는 test01.txt파일이 없다
+			   이클립스에서 상대주소는 standard_Java_2에 있기 때문에 test01.txt파일이 있다.
